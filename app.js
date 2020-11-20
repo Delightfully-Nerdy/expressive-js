@@ -22,7 +22,12 @@ app.set('view engine', 'ejs');
 // Navigation 
 
 app.get('', (req, res) => {
-    res.render('index', { title: 'Home page' } );
+    res.render('index',{ things: [
+            {name: 'rice'},
+            {name: 'nshima'},
+            {name: 'potatoes'}
+        ]
+    });
 });
 
 app.get('/about', (req, res) => {

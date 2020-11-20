@@ -1,4 +1,14 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit expedita omnis libero soluta ab
     consectetur perspiciatis. Accusamus eligendi eius quod. Nemo ducimus odit illum sunt placeat, dolor a incidunt?
 </p>
+<ul>
+    <% for (var thing of things) { %>
+    <% if (thing.name === 'rice') { %>
+    <li>This is definetly <%= thing.name %></li>
+    <% } else { %>
+    <li>This is definetly not <%= thing.name%> !! This is <%= thing.name %> </li>
+    <% } %>
+    <% } %>
+
+</ul>
 <a href="/about">About</a>
